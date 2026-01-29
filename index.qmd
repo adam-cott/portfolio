@@ -1,28 +1,44 @@
 ---
-title: "Welcome to My Product Management Portfolio"
+title: "Adam Cottrell"
 ---
 
 ::: {.hero-banner .text-center}
 
-<img src="images/profile.jpg" alt="add photo to /images" class="rounded-circle mb-3" width="160">
+<img src="images/profile.jpg" alt="Adam Cottrell" class="rounded-circle mb-3" width="160">
 
-<h1>Your Name</h1>
+<h1>Adam Cottrell</h1>
 
-<a href="https://linkedin.com/in/your-profile" class="btn btn-outline-primary btn-sm" target="_blank">
+<a href="https://linkedin.com/in/adam-cottrell" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-linkedin"></i> LinkedIn
 </a>
-<a href="https://github.com/your-username" class="btn btn-outline-primary btn-sm" target="_blank">
+<a href="https://github.com/adam-cott" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-github"></i> GitHub
 </a>
 
 :::
+
+## Turning strategy into execution.
+
+I am a Strategic Management student at BYU's Marriott School of Business with a strong interest in product, program, and project management. My background centers on coordinating people, priorities, and data to execute complex work. I enjoy roles where structure, planning, and follow-through turn ideas into tangible results.
+
+## Background
+
+Through leadership roles managing teams of 20 or more, setting KPIs, and tracking progress across multiple initiatives, I have developed a disciplined approach to planning and execution. I am comfortable working cross-functionally, communicating status clearly, and using data to inform decisions. I am especially interested in work at the intersection of strategy and execution, where good program management enables teams to move faster and with more clarity.
+
+## What You'll Find Here
+
+This site is a space for projects, writing, and practical examples related to strategic management, analytics, and emerging technologies. You will find work focused on how teams organize, how decisions get made, and how tools like data analysis and AI can support better execution. If you are interested in product-driven organizations, operations, or program management, this site is meant to be useful to you.
+
+## Skills
+
+My work draws on strong analytical skills, including advanced Excel, SQL, R, and AI application development, alongside a focus on clear communication and coordination.
 
 ## Featured Projects
 
 ::: {.g-col-12 .g-col-md-6 .card}
 
 ### [Name of my first app](projects/project-1.qmd)
-A one sentence description of my first application which is deployed to vercel. 
+A one sentence description of my first application which is deployed to vercel.
 
 :::
 

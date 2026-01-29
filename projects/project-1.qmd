@@ -1,24 +1,34 @@
 ---
-title: "Name of the application I have published for Homework 1"
-date: "2024-09-15"
-categories: [GitHub, Vercel, Claude Code]
+title: "SpendTrackr"
+date: "2025-01-29"
+categories: [Supabase, Vercel, PWA, OCR]
 ---
 
 ## Overview
 
-This project involved using Claude Code to write the code to needed to deveop an app that ...
+SpendTrackr is a receipt tracking application that uses OCR (Optical Character Recognition) to automatically extract and categorize expense data from uploaded receipts. Built as a Progressive Web App, it works seamlessly on both desktop and mobile devices.
 
 The primary purpose of this app is to:
 
-- ....
-- ....
+- Track and categorize expenses by scanning receipts
+- Distinguish between 529-eligible education expenses and regular spending
+- Provide a secure, mobile-friendly way to manage personal finances on the go
+
+## Key Features
+
+- **OCR Receipt Scanning**: Upload a photo of any receipt and automatically extract merchant, amount, and date information
+- **529 vs Non-529 Tracking**: Categorize expenses to easily identify education-related spending eligible for 529 plan reimbursement
+- **Progressive Web App**: Install on your phone's home screen for a native app experience
+- **PIN Security**: Protect your financial data with a personal PIN code
+- **Gmail Notifications**: Receive email alerts for important expense updates
+- **Cloud Sync**: Data stored securely in Supabase and accessible from any device
 
 ## Live Product Demo
 
 <div class="d-flex justify-content-center gap-3 my-4">
   <!-- Open App button -->
   <a class="btn btn-primary d-inline-flex align-items-center"
-     href="https://tetris-game-egc6.vercel.app/"
+     href="https://spendtrackr-five.vercel.app/"
      target="_blank" rel="noopener"
      aria-label="Open live app">
     <i class="fa-solid fa-window-restore me-2" aria-hidden="true"></i>
@@ -27,7 +37,7 @@ The primary purpose of this app is to:
 
   <!-- GitHub Source button -->
   <a class="btn btn-outline-dark d-inline-flex align-items-center"
-     href="https://github.com/your-user/your-repo"
+     href="https://github.com/adam-cott/spendtrackr"
      target="_blank" rel="noopener"
      aria-label="Open GitHub source">
     <i class="fa-brands fa-github me-2" aria-hidden="true"></i>
@@ -35,20 +45,26 @@ The primary purpose of this app is to:
   </a>
 </div>
 
-<iframe src="https://tetris-game-egc6.vercel.app/"
+<iframe src="https://spendtrackr-five.vercel.app/"
         style="width:100%; height:900px; border:none;"
         allowfullscreen>
 </iframe>
 
 ## Technical Details
 
-Framework/Stack: [e.g., React, Quarto, HTML/CSS/JS]
+**Framework/Stack**: JavaScript, HTML/CSS
 
-Deployment: GitHub Pages + Vercel
+**Backend**: Supabase (PostgreSQL database, authentication, storage)
 
-Tools Used:
--   Claude Code
+**Deployment**: Vercel
 
-## Product Requirements Document
+**Key Technologies**:
 
-Paste in the PRD that you submitted to Claude Code
+- OCR integration for receipt parsing
+- Progressive Web App (PWA) with service worker for offline capability
+- Supabase for real-time database and user authentication
+- Gmail API for email notifications
+
+## What I Learned
+
+Building SpendTrackr pushed me to work across the full stack, from setting up a Supabase backend to implementing PWA features that make the app feel native on mobile. The OCR integration was particularly interesting, as it required handling image processing and parsing unstructured receipt data into usable expense records. This project reinforced how thoughtful UX decisions, like PIN security and clear expense categorization, can make a tool genuinely useful for everyday tasks.

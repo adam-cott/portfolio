@@ -37,8 +37,8 @@ My work draws on strong analytical skills, including advanced Excel, SQL, R, and
 
 ::: {.g-col-12 .g-col-md-6 .card}
 
-### [Name of my first app](projects/project-1.qmd)
-A one sentence description of my first application which is deployed to vercel.
+### [SpendTrackr](projects/project-1.qmd)
+A receipt tracking PWA that uses OCR to automatically extract and categorize expenses, with support for 529 education expense tracking.
 
 :::
 

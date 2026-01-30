@@ -7,7 +7,7 @@ website:
   favicon: images/favicon.png
   navbar:
     background: primary
-    left:
+    center:
       - href: index.qmd
         text: Home
       - href: about.qmd

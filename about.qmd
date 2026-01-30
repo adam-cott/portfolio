@@ -4,7 +4,7 @@ title: "About Me"
 
 ::: {.hero-banner .text-center}
 
-<img src="images/profile.jpg" alt="Adam Cottrell" class="rounded-circle mb-3" width="200">
+<img src="images/profile.jpg" alt="Adam Cottrell" class="rounded-circle mb-3" width="280">
 
 <h1>Adam Cottrell</h1>
 

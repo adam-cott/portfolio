@@ -8,7 +8,7 @@ title: "About Me"
 
 <h1>Adam Cottrell</h1>
 
-<a href="https://linkedin.com/in/adam-cottrell" class="btn btn-outline-primary btn-sm" target="_blank">
+<a href="https://www.linkedin.com/in/adam-cottrell-759344265/" class="btn btn-outline-primary btn-sm" target="_blank">
   <i class="fab fa-linkedin"></i> LinkedIn
 </a>
 <a href="https://github.com/adam-cott" class="btn btn-outline-primary btn-sm" target="_blank">

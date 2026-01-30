@@ -126,6 +126,22 @@ body {
 /* ========================================
    TITLE & BANNER
    ======================================== */
+
+/* Hide the automatic page title when hero banner is present */
+.hero-banner + .quarto-title-block,
+.quarto-title-block:has(+ .hero-banner) {
+  display: none;
+}
+
+/* Hide title block on home page */
+body:has(.hero-banner) > #quarto-content > #quarto-document-content > .quarto-title-block {
+  display: none;
+}
+
+#title-block-header {
+  display: none;
+}
+
 .quarto-title-banner {
   padding: 2rem 0;
   text-align: center;

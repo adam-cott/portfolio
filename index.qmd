@@ -1,5 +1,6 @@
 ---
 title: "Adam Cottrell"
+title-block-banner: false
 ---
 
 ::: {.hero-banner .text-center}

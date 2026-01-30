@@ -27,7 +27,7 @@ Through leadership roles managing teams of 20 or more, setting KPIs, and trackin
 
 ## What You'll Find Here
 
-This site is a space for projects, writing, and practical examples related to strategic management, analytics, and emerging technologies. You will find work focused on how teams organize, how decisions get made, and how tools like data analysis and AI can support better execution. If you are interested in product-driven organizations, operations, or program management, this site is meant to be useful to you.
+This site is where I share projects I'm working on and document what I'm learning. You'll find examples of my work in strategic management, analytics, and development—things I've built to solve real problems or explore ideas I find interesting.
 
 ## Skills
 

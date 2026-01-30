@@ -50,8 +50,21 @@ body {
   background-color: var(--dark-teal) !important;
 }
 
+.navbar > .container-fluid {
+  justify-content: center !important;
+}
+
 .navbar-nav {
   margin: 0 auto;
+  justify-content: center;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+  justify-content: center;
+}
+
+#navbarCollapse {
   justify-content: center;
 }
 

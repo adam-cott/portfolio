@@ -1,0 +1,75 @@
+---
+title: "Problems I'm Exploring"
+---
+
+These are problems I think about often—not frustrations, but patterns I've noticed in my own work that feel worth understanding better. Some are about communication, some are about focus, and others are about translating ideas into action. I'm documenting them here because naming a problem clearly is usually the first step toward solving it.
+
+---
+
+## 1. Explaining Meaningful Work Simply
+
+::: {.problem-card}
+
+I do a lot of meaningful work, but it can be hard to explain it in a way that's short, clear, and easy for others to understand. I'm involved in a mix of academic, professional, and project-based work, and when it's not communicated well, the impact of that work can get lost.
+
+**Why this matters:** Clear communication builds trust and helps people understand what I actually do. When I can explain my work simply, it opens opportunities for collaboration and makes it easier for others to see where I can add value.
+
+**What solving it looks like:** Being able to share experiences in a way that's accessible and honest—without oversimplifying or losing the substance of what I've done.
+
+:::
+
+---
+
+## 2. Deciding What Matters Most
+
+::: {.problem-card}
+
+There are often too many things worth doing, and deciding what to focus on can be tricky. In projects, presentations, and applications, what I choose to emphasize directly affects the outcome—but those choices aren't always obvious.
+
+**Why this matters:** I want to spend my time on work that actually moves things forward. When I'm unsure about priorities, I slow down, second-guess decisions, or spread myself too thin.
+
+**What solving it looks like:** Making confident tradeoffs that help me move faster, stay focused, and make the most of my time and energy.
+
+:::
+
+---
+
+## 3. Making Frameworks Feel Real
+
+::: {.problem-card}
+
+I understand frameworks and analytics, but sometimes it's hard to make them feel real and useful outside of class or textbooks. There's often a gap between knowing a concept and being able to apply it in a way that actually helps solve a problem.
+
+**Why this matters:** I want the ideas I learn to make a difference in the real world. Theory is only valuable if it shapes how decisions get made or how work gets done.
+
+**What solving it looks like:** Being able to translate concepts into practice in a way that feels natural and useful—making my work more effective and helping teams make better decisions.
+
+:::
+
+---
+
+## 4. Small Things That Slow You Down
+
+::: {.problem-card}
+
+Small, recurring annoyances—like tools that don't quite work the way they should or little workflow glitches—can quietly eat up focus and energy. Individually, they're minor. Collectively, they add up.
+
+**Why this matters:** These tiny distractions pile up and make it harder to stay productive and clear-headed. They're the kind of thing you barely notice until you realize how much mental space they take up.
+
+**What solving it looks like:** Smoothing out everyday bumps so that more energy can go toward the work that actually matters—and less gets lost to frustration or context-switching.
+
+:::
+
+---
+
+## 5. Knowing When Good Enough Is Good Enough
+
+::: {.problem-card}
+
+I sometimes spend too much time tweaking small choices that don't really change the outcome. Whether it's refining a sentence, adjusting formatting, or rethinking a minor detail, it's easy to keep optimizing past the point where it makes a difference.
+
+**Why this matters:** It uses up energy that could go toward bigger, more important tasks. Perfectionism in the wrong places slows me down and makes work feel heavier than it needs to be.
+
+**What solving it looks like:** Letting go of unnecessary tweaks and staying focused on what actually moves the needle—keeping me efficient, clear-headed, and less mentally drained.
+
+:::

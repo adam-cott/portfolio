@@ -12,6 +12,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: problems.qmd
+        text: Problems
       - text: Projects
         menu:
           - href: projects/project-1.qmd

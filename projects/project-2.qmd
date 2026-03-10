@@ -6,7 +6,7 @@ categories: [React, Leaflet, Python, Vercel]
 
 ## Overview
 
-The Starving Student Card Map is an interactive deal-finding app that digitizes the physical Starving Student Discount Card — a booklet of 418 coupon-style deals across 199 Utah County businesses. Instead of flipping through a paper booklet, students open the app, see every deal pinned on a live map, and tap any location to get the full offer details and directions in under 10 seconds.
+**The Starving Student Card Map** is an interactive deal-finding app that digitizes the physical Starving Student Discount Card — a booklet of 418 coupon-style deals across 199 Utah County businesses. Instead of flipping through a paper booklet, students open the app, see every deal pinned on a live map, and tap any location to get the full offer details and directions in under 10 seconds.
 
 The primary purpose of this app is to:
 

@@ -6,7 +6,7 @@ categories: [Supabase, Vercel, PWA, OCR]
 
 ## Overview
 
-SpendTrackr is a receipt tracking application that uses OCR (Optical Character Recognition) to automatically extract and categorize expense data from uploaded receipts. Built as a Progressive Web App, it works seamlessly on both desktop and mobile devices.
+**SpendTrackr** is a receipt tracking application that uses OCR (Optical Character Recognition) to automatically extract and categorize expense data from uploaded receipts. Built as a Progressive Web App, it works seamlessly on both desktop and mobile devices.
 
 The primary purpose of this app is to:
 

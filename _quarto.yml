@@ -18,8 +18,8 @@ website:
         menu:
           - href: projects/project-1.qmd
             text: SpendTrackr
-          #- href: projects/project-2.qmd
-          #  text: Business Case Presentation
+          - href: projects/project-2.qmd
+            text: SSC Map
           #- href: projects/project-3.qmd
           #  text: Project 3
           #- href: projects/project-4.qmd

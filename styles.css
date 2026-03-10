@@ -179,9 +179,16 @@ body:has(.hero-banner) > #quarto-content > #quarto-document-content > .quarto-ti
   text-align: center;
   padding: 3rem 2rem;
   background: linear-gradient(135deg, var(--white) 0%, var(--light-teal) 100%);
-  border-radius: 12px;
+  border-radius: 0;
   margin-bottom: 3rem;
-  border: 1px solid var(--border-subtle);
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  /* Break out of container to full viewport width */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hero-banner h1 {

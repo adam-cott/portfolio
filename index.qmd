@@ -39,7 +39,7 @@ My work draws on strong analytical skills, including advanced Excel, SQL, R, and
 ::: {.g-col-12 .g-col-md-6 .card}
 
 ### [SpendTrackr](projects/project-1.qmd)
-A receipt tracking PWA that uses OCR to automatically extract and categorize expenses, with support for 529 education expense tracking.
+Turned a three-step manual receipt routine into one tap.
 
 :::
 

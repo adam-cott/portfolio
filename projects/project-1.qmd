@@ -1,27 +1,30 @@
 ---
 title: "SpendTrackr"
 date: "2025-01-29"
-categories: [Supabase, Vercel, PWA, OCR]
+categories: [Flask, Supabase, OCR, Vercel]
 ---
 
-## Overview
+## The Problem
 
-**SpendTrackr** is a receipt tracking application that uses OCR (Optical Character Recognition) to automatically extract and categorize expense data from uploaded receipts. Built as a Progressive Web App, it works seamlessly on both desktop and mobile devices.
+Every 529-eligible purchase meant the same three manual steps: snap a photo of the receipt, log it in a shared spreadsheet, and email my dad a specifically formatted message so he could file it. I built an app to do all three in the time it takes to scan one photo.
 
-The primary purpose of this app is to:
+My family tracks 529-eligible education expenses (food, textbooks, and similar) through a shared spreadsheet with my dad, and every receipt needs to reach him as an email with a specific subject line format so he can file it correctly. Doing that by hand for every single purchase — photo, spreadsheet entry, formatted email — got old fast and was easy to fall behind on.
 
-- Track and categorize expenses by scanning receipts
-- Distinguish between 529-eligible education expenses and regular spending
-- Provide a secure, mobile-friendly way to manage personal finances on the go
+## What I Built and Why
 
-## Key Features
+I built a PWA that scans a receipt photo, runs it through OCR to pull out the vendor, amount, and date, and auto-categorizes it against a list of 100+ known vendors (it also flags 529-eligible categories like food and textbooks automatically). Saving a receipt does three things at once: stores it in a Supabase database I can pull from anywhere, fires off an email to my dad with the receipt photo attached and the exact subject line format he needs, and adds it to an Excel export I can generate anytime with a 529-eligible column built in. I kept the frontend as vanilla JS with a couple of Python serverless functions on Vercel rather than reaching for a framework, since this only needed to solve one specific, well-scoped problem. I added PIN authentication later once I realized the app was reachable by anyone with the URL.
 
-- **OCR Receipt Scanning**: Upload a photo of any receipt and automatically extract merchant, amount, and date information
-- **529 vs Non-529 Tracking**: Categorize expenses to easily identify education-related spending eligible for 529 plan reimbursement
-- **Progressive Web App**: Install on your phone's home screen for a native app experience
-- **PIN Security**: Protect your financial data with a personal PIN code
-- **Gmail Notifications**: Receive email alerts for important expense updates
-- **Cloud Sync**: Data stored securely in Supabase and accessible from any device
+## How It Went
+
+It collapsed three manual steps (photo, spreadsheet, formatted email) into one. I scan the receipt and the rest happens automatically.
+
+## What I'd Do Differently
+
+The OCR-to-data parsing held up better than I expected. Going back through the commit history, the "fixes" there were really just the vendor and category dictionaries growing as I added more stores, not the regex itself breaking. The actual fragile part was email delivery: getting Gmail to stop blocking the message and getting the subject line spacing exactly right for my dad's filing system took several rounds of trial and error, and left behind a lot of step-by-step debug logging I only recently went back and stripped out. If I rebuilt it, I'd write a couple of real tests around the email formatting up front instead of debugging it live.
+
+## Tech Stack
+
+Vanilla HTML/CSS/JS, Python Flask (Vercel serverless functions), Supabase (PostgreSQL), OCR.space, Gmail SMTP, SheetJS, Vercel hosting
 
 ## Live Product Demo
 
@@ -50,22 +53,3 @@ The primary purpose of this app is to:
         tabindex="-1"
         allowfullscreen>
 </iframe>
-
-## Technical Details
-
-**Framework/Stack**: JavaScript, HTML/CSS
-
-**Backend**: Supabase (PostgreSQL database, authentication, storage)
-
-**Deployment**: Vercel
-
-**Key Technologies**:
-
-- OCR integration for receipt parsing
-- Progressive Web App (PWA) with service worker for offline capability
-- Supabase for real-time database and user authentication
-- Gmail API for email notifications
-
-## What I Learned
-
-Building SpendTrackr pushed me to work across the full stack, from setting up a Supabase backend to implementing PWA features that make the app feel native on mobile. The OCR integration was particularly interesting, as it required handling image processing and parsing unstructured receipt data into usable expense records. This project reinforced how thoughtful UX decisions, like PIN security and clear expense categorization, can make a tool genuinely useful for everyday tasks.

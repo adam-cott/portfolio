@@ -43,3 +43,10 @@ A receipt tracking PWA that uses OCR to automatically extract and categorize exp
 
 :::
 
+::: {.g-col-12 .g-col-md-6 .card}
+
+### [Starving Student Card Map](projects/project-2.qmd)
+Mapped 418 student deals so I'd actually use the card I paid for.
+
+:::
+

@@ -1,27 +1,32 @@
 ---
 title: "SSC Map"
 date: "2025-03-10"
-categories: [React, Leaflet, Python, Vercel]
+categories: [React, Leaflet, Firebase, Vercel]
 ---
 
-## Overview
+## The Problem
 
-**Starving Student Card Map** is an interactive deal-finding app that digitizes the physical Starving Student Discount Card — a booklet of 418 coupon-style deals across 199 Utah County businesses. Instead of flipping through a paper booklet, students open the app, see every deal pinned on a live map, and tap any location to get the full offer details and directions in under 10 seconds.
+I had a card worth hundreds of dollars in deals and barely used it, because finding what was actually near me took longer than just going to my usual spot.
 
-The primary purpose of this app is to:
+The Starving Student Discount Card bundles 400+ deals from businesses across Provo and Orem for BYU/UVU students, but the official app organizes everything as a flat category list, with no map. Chains with multiple locations get split across categories or duplicated, so it's unclear whether two listings are the same business or different ones. With no way to see what was actually nearby, I rarely used a card I'd already paid for.
 
-- Help students find nearby deals at the exact moment they're deciding where to eat
-- Replace a physical coupon booklet with a searchable, filterable, map-based experience
-- Track how many uses remain on each deal across a student's card year
+## What I Built and Why
 
-## Key Features
+I built a mobile-first PWA that puts all 418 deals on an interactive map instead of a list. Nearby pins cluster together so a chain with nine locations doesn't flood the screen, and tapping a cluster spiders the pins out for an exact pick. I added category filters, a nearest-first sort that only asks for location permission after explaining why instead of throwing a native browser prompt at someone cold, and a usage tracker so I can see at a glance how many uses I have left before a deal is exhausted. It runs off a static dataset with no backend, since the data doesn't change often enough to justify the added complexity.
 
-- **Interactive Map**: 819 pins across Utah County, clustered geographically and color-coded by category, with spiderfy behavior for densely co-located businesses
-- **Deal Detail**: Tap any pin to see the full offer, usage tracker, address, expiration date, and one-tap Google Maps directions
-- **Category Filtering**: Filter by Pizza, Restaurants, Sandwiches, Treats & Drinks, Free Stuff, Entertainment, and Retail & Auto
-- **Search**: Find any business or deal by name instantly
-- **Usage Tracking**: Dot-based tracker shows how many uses remain per deal, persisted locally so your history survives between sessions
-- **Mobile-First Design**: Built for the on-the-go use case — full-screen map, bottom sheet deal details, and horizontally scrollable filters optimized for one-handed use
+I ran user testing with classmates in my 490R course early on, which surfaced UI friction I couldn't see myself and shaped a more intuitive layout. Since that first version I've kept iterating: cross-device sync, a favorites tab, a rewards tab, and a swipe-to-redeem flow with a countdown screen so marking a deal used feels deliberate instead of an easy misfire.
+
+## How It Went
+
+It fixed exactly the problem I built it for. I went from barely opening the official app to actually checking the map before deciding where to eat, since the deals nearest me show up immediately instead of being buried in a long list.
+
+## What I'd Do Differently
+
+The data cleanup ended up being a much bigger lift than the UI. There are six separate geocoding and data-cleaning scripts plus multiple manual review CSVs in the repo. If I started over, I'd plan for that as its own phase up front instead of discovering mid-build how messy 199 businesses' addresses actually were.
+
+## Tech Stack
+
+Vite, React 19, react-leaflet (OpenStreetMap), Tailwind CSS, Firebase/Firestore, vite-plugin-pwa
 
 ## Live Product Demo
 
@@ -50,22 +55,3 @@ The primary purpose of this app is to:
         tabindex="-1"
         allowfullscreen>
 </iframe>
-
-## Technical Details
-
-**Framework/Stack**: Vite + React 19, Tailwind CSS, react-leaflet
-
-**Data**: Static JSON (418 deals, built from a multi-stage Python geocoding pipeline)
-
-**Deployment**: Vercel (auto-deploy from GitHub)
-
-**Key Technologies**:
-
-- Leaflet + react-leaflet-cluster for map rendering, clustering, and spiderfy
-- Custom Python geocoding pipeline (5 scripts) to build and validate all 819 coordinates from a 376-row business CSV
-- localStorage for client-side usage persistence with no backend required
-- OpenStreetMap tiles for zero-cost map rendering
-
-## What I Learned
-
-Building the SSC Map taught me how much complexity hides inside "just put some pins on a map." The geocoding pipeline alone required several Python scripts and multiple fallback strategies to correctly place over 800 locations for 199 businesses across the Wasatch Front. On the frontend, getting clustering, spiderfy, and multi-deal location picking to work together required deep Leaflet customization that pushed me well beyond standard tutorials. The biggest product lesson came from user testing: watching someone struggle to find the directions button after using a deal showed me that the gap between "it works" and "it's usable" is where most of the real product work lives.

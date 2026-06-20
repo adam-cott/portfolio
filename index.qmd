@@ -50,3 +50,10 @@ Mapped 418 student deals so I'd actually use the card I paid for.
 
 :::
 
+::: {.g-col-12 .g-col-md-6 .card}
+
+### [Home Weather Watch](projects/project-3.qmd)
+Built a fully automated rain alert, on a whim, on a road trip.
+
+:::
+

@@ -20,8 +20,8 @@ website:
             text: SpendTrackr
           - href: projects/project-2.qmd
             text: SSC Map
-          #- href: projects/project-3.qmd
-          #  text: Project 3
+          - href: projects/project-3.qmd
+            text: Home Weather Watch
           #- href: projects/project-4.qmd
           #  text: Project 4
           #- href: projects/project-5.qmd

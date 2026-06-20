@@ -1,143 +1,53 @@
 ---
-title: "Market Entry Strategy Analysis"
-description: "Comprehensive market research and go-to-market strategy for new product launch"
-date: "2024-01-10"
-image: ../images/project3-preview.jpg
-categories: [Strategy, Market Research, Business Development]
+title: "Home Weather Watch"
+date: "2026-06-08"
+categories: [React, Firebase, GitHub Actions, Vercel]
 ---
 
-## Project Overview
+## The Problem
 
-Summarize the market entry challenge and your role in developing the strategy. What new market or product category were you analyzing?
+I was bored on a road trip and wanted to test whether I could ship something small but genuinely automated end to end: no manual checking, no app to open, just a notification the moment something actually changes. Rain was a clean test case since it's a simple binary state with a real, usable signal.
 
-## Executive Summary
+## What I Built and Why
 
-Provide a high-level overview of your recommendations and the expected impact. This section should be accessible to both technical and business stakeholders.
+A PWA where you save a ZIP code, and a GitHub Actions cron job checks that ZIP's weather every 15 minutes via the OpenWeatherMap API. If the rain state flips (starts or stops), it pushes a notification through Firebase Cloud Messaging. Firestore holds the one shared settings doc. No backend server to maintain — the whole thing runs on free-tier scheduled automation.
 
-## Market Analysis
+## How It Went
 
-### Industry Landscape
-- What is the size and growth rate of the target market?
-- Who are the major players and what market share do they hold?
-- What are the key industry trends and drivers?
+It works. The full chain — scheduled job, API call, state comparison, push notification — runs on its own with zero upkeep.
 
-### Competitive Analysis
-- Who are your direct and indirect competitors?
-- What are their strengths, weaknesses, and market positioning?
-- Where are the gaps and opportunities?
+## What I'd Do Differently
 
-### Customer Analysis
-- Who is your target customer?
-- What are their needs, pain points, and preferences?
-- How do they currently solve the problem you're addressing?
+It's built for one ZIP code and one user by design, since that's all I needed to prove the concept. If I extended it, I'd add per-user settings and auth before letting anyone else use it.
 
-## Strategic Framework
+## Tech Stack
 
-### Market Opportunity
-- What specific opportunity did you identify?
-- How large is the addressable market?
-- What factors make this the right time to enter?
+React (Vite), Firebase (Firestore + Cloud Messaging), GitHub Actions (cron), OpenWeatherMap API
 
-### Value Proposition
-- What unique value does your product/service offer?
-- How does it differentiate from existing solutions?
-- Why would customers choose you over alternatives?
+## Live Product Demo
 
-### Go-to-Market Strategy
-- What channels will you use to reach customers?
-- How will you price your offering?
-- What partnerships or alliances are needed?
+<div class="d-flex justify-content-center gap-3 my-4">
+  <!-- Open App button -->
+  <a class="btn btn-primary d-inline-flex align-items-center"
+     href="https://weather-watcher-theta.vercel.app/"
+     target="_blank" rel="noopener"
+     aria-label="Open live app">
+    <i class="fa-solid fa-window-restore me-2" aria-hidden="true"></i>
+    Open App in New Tab
+  </a>
 
-## Research Methodology
+  <!-- GitHub Source button -->
+  <a class="btn btn-outline-dark d-inline-flex align-items-center"
+     href="https://github.com/adam-cott/weather_watcher"
+     target="_blank" rel="noopener"
+     aria-label="Open GitHub source">
+    <i class="fa-brands fa-github me-2" aria-hidden="true"></i>
+    View source on GitHub
+  </a>
+</div>
 
-### Data Sources
-- What primary research did you conduct?
-- Which secondary sources did you leverage?
-- How did you ensure data quality and reliability?
-
-### Analysis Techniques
-- What frameworks did you apply (Porter's Five Forces, SWOT, etc.)?
-- Which quantitative and qualitative methods did you use?
-- How did you validate your assumptions?
-
-## Key Findings
-
-### Market Insights
-Present your 3-5 most important discoveries:
-
-1. **Insight #1**: Description and implications
-2. **Insight #2**: Description and implications  
-3. **Insight #3**: Description and implications
-
-### Customer Insights
-- What did you learn about customer behavior and preferences?
-- What unmet needs did you identify?
-- How price-sensitive is the target market?
-
-## Strategic Recommendations
-
-### Market Entry Approach
-- What entry strategy do you recommend (direct, partnership, acquisition)?
-- What should be the geographic focus?
-- What's the optimal timing for launch?
-
-### Product Strategy
-- What features should be prioritized for launch?
-- How should the product be positioned?
-- What pricing strategy will maximize adoption?
-
-### Resource Requirements
-- What investment is needed?
-- What capabilities must be developed?
-- What partnerships are critical for success?
-
-## Implementation Roadmap
-
-### Phase 1: Foundation (Months 1-3)
-- Key activities and milestones
-- Resource requirements
-- Success metrics
-
-### Phase 2: Launch (Months 4-9)
-- Go-to-market execution
-- Customer acquisition strategy
-- Performance monitoring
-
-### Phase 3: Scale (Months 10-18)
-- Expansion opportunities
-- Optimization initiatives
-- Long-term growth strategy
-
-## Risk Assessment
-
-### Key Risks
-- What are the primary threats to success?
-- How likely are these risks to materialize?
-- What would be the potential impact?
-
-### Mitigation Strategies
-- How can each risk be reduced or eliminated?
-- What contingency plans should be developed?
-- What early warning indicators should be monitored?
-
-## Expected Outcomes
-
-### Financial Projections
-- What revenue potential do you forecast?
-- What are the key cost drivers?
-- When do you expect to reach profitability?
-
-### Success Metrics
-- How will you measure progress and success?
-- What leading and lagging indicators will you track?
-- What are the key performance benchmarks?
-
-## Conclusion
-
-Summarize your recommendations and their strategic importance. Emphasize the opportunity size, competitive advantages, and expected returns on investment.
-
----
-
-**Skills Demonstrated:** Market Research, Strategic Analysis, Business Planning, Financial Modeling, Competitive Intelligence, Stakeholder Communication
-
-**Tools Used:** Excel, Tableau, Survey Tools, Industry Databases, Financial Modeling Software
+<iframe src="https://weather-watcher-theta.vercel.app/"
+        style="width:100%; height:900px; border:none;"
+        tabindex="-1"
+        allowfullscreen>
+</iframe>

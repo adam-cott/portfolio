@@ -1,33 +1,53 @@
 ---
-title: "Project 4"
-description: "Project description placeholder - replace with your actual project"
-date: "2024-XX-XX"
-image: ../images/project4-preview.jpg
-categories: [Category 1, Category 2, Category 3]
+title: "NBA News Hub"
+date: "2026-02-05"
+categories: [Next.js, Supabase, YouTube API, Vercel]
 ---
 
-## Project Overview
+## The Problem
 
-Replace this content with your actual project details. This is a placeholder template for your fourth project.
+NBA news apps give you headlines, but not a sense of how fans are actually reacting to a story. I wanted to build an aggregator that paired each headline with real fan sentiment, not just the article itself.
 
-## Challenge
+## What I Built and Why
 
-Describe the specific challenge or problem you were addressing.
+A Next.js news aggregator that pulls headlines from ESPN and CBS Sports, scores sentiment, and was meant to back that sentiment with real comments matched to each specific story. I built the comment pipeline against YouTube first (Reddit and Twitter/X both locked down free real-time API access years ago, so YouTube was the only realistic free option), including a relevance-scoring system meant to confirm a video was actually about the same story before pulling its comments. I also put real engineering work into making it production-ready: parallelized the sentiment pipeline to cut cold-load time from 15 seconds to 4, fixed real bugs, cleaned up dead code, and added PWA support.
 
-## Approach
+## How It Went
 
-Detail your methodology and approach to solving the problem.
+Even with the relevance scoring, the YouTube comments often came from videos that weren't actually about the linked article, since there's no reliable way to programmatically tie a YouTube video to a specific, recent news story. That's a structural data problem, not a bug I could patch. Combined with Reddit and Twitter being closed off, the core idea (sentiment tied accurately to a specific story) wasn't achievable without a paid data source. I stopped active development at that point. The core news aggregator still works and is still live.
 
-## Results
+## What I'd Do Differently
 
-Present your findings, outcomes, and impact.
+I'd validate the comment-to-article matching as a tiny proof of concept before building the rest of the pipeline around it. I spent real time on performance and polish for a feature whose core data problem I hadn't actually confirmed was solvable yet.
 
-## Skills Demonstrated
+## Tech Stack
 
-List the key skills this project showcases.
+Next.js 16, TypeScript, Tailwind CSS, Supabase, YouTube Data API, OpenAI (optional sentiment), Sentry
 
----
+## Live Product Demo
 
-**Skills Demonstrated:** [Your skills here]
+<div class="d-flex justify-content-center gap-3 my-4">
+  <!-- Open App button -->
+  <a class="btn btn-primary d-inline-flex align-items-center"
+     href="https://nba7.vercel.app"
+     target="_blank" rel="noopener"
+     aria-label="Open live app">
+    <i class="fa-solid fa-window-restore me-2" aria-hidden="true"></i>
+    Open App in New Tab
+  </a>
 
-**Tools Used:** [Your tools here]
+  <!-- GitHub Source button -->
+  <a class="btn btn-outline-dark d-inline-flex align-items-center"
+     href="https://github.com/adam-cott/nba7"
+     target="_blank" rel="noopener"
+     aria-label="Open GitHub source">
+    <i class="fa-brands fa-github me-2" aria-hidden="true"></i>
+    View source on GitHub
+  </a>
+</div>
+
+<iframe src="https://nba7.vercel.app"
+        style="width:100%; height:900px; border:none;"
+        tabindex="-1"
+        allowfullscreen>
+</iframe>

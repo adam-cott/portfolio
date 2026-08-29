@@ -10,11 +10,11 @@ I was bored on a road trip and wanted to test whether I could ship something sma
 
 ## What I Built and Why
 
-A PWA where you save a ZIP code, and a GitHub Actions cron job checks that ZIP's weather every 15 minutes via the OpenWeatherMap API. If the rain state flips (starts or stops), it pushes a notification through Firebase Cloud Messaging. Firestore holds the one shared settings doc. No backend server to maintain — the whole thing runs on free-tier scheduled automation.
+A PWA where you save a ZIP code, and a GitHub Actions cron job checks that ZIP's weather every 15 minutes via the OpenWeatherMap API. If the rain state flips (starts or stops), it pushes a notification through Firebase Cloud Messaging. Firestore holds the one shared settings doc. No backend server to maintain; the whole thing runs on free-tier scheduled automation.
 
 ## How It Went
 
-It works. The full chain — scheduled job, API call, state comparison, push notification — runs on its own with zero upkeep.
+It works. The full chain (scheduled job, API call, state comparison, push notification) runs on its own with zero upkeep.
 
 ## What I'd Do Differently
 

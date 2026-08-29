@@ -8,7 +8,7 @@ categories: [Flask, Supabase, OCR, Vercel]
 
 Every 529-eligible purchase meant the same three manual steps: snap a photo of the receipt, log it in a shared spreadsheet, and email my dad a specifically formatted message so he could file it. I built an app to do all three in the time it takes to scan one photo.
 
-My family tracks 529-eligible education expenses (food, textbooks, and similar) through a shared spreadsheet with my dad, and every receipt needs to reach him as an email with a specific subject line format so he can file it correctly. Doing that by hand for every single purchase — photo, spreadsheet entry, formatted email — got old fast and was easy to fall behind on.
+My family tracks 529-eligible education expenses (food, textbooks, and similar) through a shared spreadsheet with my dad, and every receipt needs to reach him as an email with a specific subject line format so he can file it correctly. Doing that by hand for every single purchase (photo, spreadsheet entry, formatted email) got old fast and was easy to fall behind on.
 
 ## What I Built and Why
 

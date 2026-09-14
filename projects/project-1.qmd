@@ -28,7 +28,7 @@ Vanilla HTML/CSS/JS, Python Flask (Vercel serverless functions), Supabase (Postg
 
 ## Live Product Demo
 
-<p class="text-center" style="color: var(--ink-muted); font-size: 0.9rem;">Try it yourself with the demo PIN: <strong>0000</strong> (a separate sandbox account — no real data, no emails sent)</p>
+<p class="text-center">Try it yourself with the demo PIN: <strong>0000</strong> (a separate sandbox account with no real data and no emails sent)</p>
 
 <div class="d-flex justify-content-center gap-3 my-4">
   <!-- Open App button -->

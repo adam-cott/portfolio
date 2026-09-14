@@ -47,7 +47,7 @@ React (Vite), Firebase (Firestore + Cloud Messaging), GitHub Actions (cron), Ope
 </div>
 
 <iframe src="https://weather-watcher-theta.vercel.app/"
-        style="width:100%; height:900px; border:none;"
+        style="width:390px; height:844px; max-width:100%; border:none;"
         tabindex="-1"
         allowfullscreen>
 </iframe>
